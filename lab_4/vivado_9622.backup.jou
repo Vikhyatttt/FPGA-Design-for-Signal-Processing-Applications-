@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct  3 16:00:09 2025
+# Process ID: 9622
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab4
+# Command line: vivado
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab4/vivado.log
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab4/vivado.jou
+# Running On: zach-127-15.engr.tamu.edu, OS: Linux, CPU Frequency: 2400.000 MHz, CPU Physical cores: 6, Host memory: 16620 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.xpr
+add_files -norecurse {/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_time.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq_pipe.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq_pipe.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v}
+add_files -norecurse /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/multiply.v
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source fft_time_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_fft_time [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0
+set_property -dict [list \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Enable_B {Always_Enabled} \
+  CONFIG.Memory_Type {True_Dual_Port_RAM} \
+  CONFIG.Operating_Mode_A {READ_FIRST} \
+  CONFIG.Operating_Mode_B {READ_FIRST} \
+  CONFIG.Write_Depth_A {65536} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+generate_target all [get_files  /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs blk_mem_gen_0_synth_1
+wait_on_run blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/sim_scripts -ip_user_files_dir /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files -ipstatic_source_dir /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/modelsim} {questa=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/questa} {xcelium=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/xcelium} {vcs=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/vcs} {riviera=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file /home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time.xsa
+file copy -force /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/impl_1/top_fft_time.bit /home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time/tft.bit

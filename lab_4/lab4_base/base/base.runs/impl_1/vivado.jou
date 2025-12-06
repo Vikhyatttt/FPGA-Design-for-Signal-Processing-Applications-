@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Oct  8 17:01:43 2025
+# Process ID: 4056157
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/impl_1
+# Command line: vivado -log top_fft_freq.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_fft_freq.tcl -notrace
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/impl_1/top_fft_freq.vdi
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/impl_1/vivado.jou
+# Running On: n01-zeus.olympus.ece.tamu.edu, OS: Linux, CPU Frequency: 3193.877 MHz, CPU Physical cores: 1, Host memory: 1081925 MB
+#-----------------------------------------------------------
+source top_fft_freq.tcl -notrace

@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl" --include "../../../../base.gen/sources_1/bd/datatrans_sys/ipshared/aed8/hdl" --include "/opt/coe/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/sim/datatrans_sys_processing_system7_0_0.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_auto_pc_0/sim/datatrans_sys_auto_pc_0.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0_S00_AXI.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_trans_0_0/sim/datatrans_sys_trans_0_0.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/sim/datatrans_sys.v" \
+"../../../../base.gen/sources_1/bd/datatrans_sys/hdl/datatrans_sys_wrapper.v" \
+"../../../../../../lab5_student_code/top_decoder.v" \
+"../../../../../../lab5_student_code/huffmandecode.v" \
+"../../../../../../lab5_student_code/izigzag.v" \
+"../../../../base.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../../../lab5_student_code/izigzag_tb.v" \
+"../../../../../../lab5_student_code/huffman_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

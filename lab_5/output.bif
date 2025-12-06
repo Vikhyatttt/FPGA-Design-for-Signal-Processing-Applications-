@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/grads/t/tamu_vik/ECEN-722/lab5/top_decoder/zynq_fsbl/fsbl.elf
+	/home/grads/t/tamu_vik/ECEN-722/lab5/lab5_base/sdcard/u-boot.elf
+	/home/grads/t/tamu_vik/ECEN-722/lab5/top_decoder/hw/top_decoder.bit
+}

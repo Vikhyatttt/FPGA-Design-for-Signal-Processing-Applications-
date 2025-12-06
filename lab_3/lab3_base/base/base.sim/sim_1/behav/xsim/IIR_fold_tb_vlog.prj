@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl" --include "../../../../base.gen/sources_1/bd/datatrans_sys/ipshared/aed8/hdl" --include "/opt/coe/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/sim/datatrans_sys_processing_system7_0_0.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_auto_pc_0/sim/datatrans_sys_auto_pc_0.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ipshared/4709/hdl/trans_v1_0_S00_AXI.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ipshared/4709/hdl/trans_v1_0.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_trans_0_0/sim/datatrans_sys_trans_0_0.v" \
+"../../../../base.ip_user_files/bd/datatrans_sys/sim/datatrans_sys.v" \
+"../../../../base.gen/sources_1/bd/datatrans_sys/hdl/datatrans_sys_wrapper.v" \
+"../../../../../lab3_codes/IIR_unfold.v" \
+"../../../../../lab3_codes/multiply.v" \
+"../../../../../lab3_codes/top_IIR_unfold.v" \
+"../../../../base.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../../lab3_codes/top_IIR_fold.v" \
+"../../../../../lab3_codes/IIR_fold.v" \
+"../../../../../lab3_codes/IIR_unfold_tb.v" \
+"../../../../../lab3_codes/IIR_fold_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

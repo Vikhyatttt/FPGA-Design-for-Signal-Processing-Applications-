@@ -1,0 +1,1076 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Oct  8 17:00:23 2025
+# Process ID: 4054894
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1
+# Command line: vivado -log top_fft_freq.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_fft_freq.tcl
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/top_fft_freq.vds
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/vivado.jou
+# Running On: n01-zeus.olympus.ece.tamu.edu, OS: Linux, CPU Frequency: 2781.387 MHz, CPU Physical cores: 1, Host memory: 1081925 MB
+#-----------------------------------------------------------
+source top_fft_freq.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2096.168 ; gain = 125.984 ; free physical = 54844 ; free virtual = 1001961
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/ip_repo/trans_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/coe/Xilinx/Vivado/2023.1/data/ip'.
+Command: synth_design -top top_fft_freq -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4055171
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2861.156 ; gain = 376.801 ; free physical = 53773 ; free virtual = 1000890
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_fft_freq' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:3]
+INFO: [Synth 8-6157] synthesizing module 'datatrans_sys_wrapper' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/hdl/datatrans_sys_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'datatrans_sys' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:13]
+INFO: [Synth 8-6157] synthesizing module 'datatrans_sys_processing_system7_0_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1166]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1166]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:109921]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:109921]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:359]
+INFO: [Synth 8-6155] done synthesizing module 'datatrans_sys_processing_system7_0_0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/synth/datatrans_sys_processing_system7_0_0.v:53]
+WARNING: [Synth 8-7071] port 'ENET0_PTP_DELAY_REQ_RX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_PTP_DELAY_REQ_TX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_PTP_PDELAY_REQ_RX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_PTP_PDELAY_REQ_TX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_PTP_PDELAY_RESP_RX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_PTP_PDELAY_RESP_TX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_PTP_SYNC_FRAME_RX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_PTP_SYNC_FRAME_TX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_SOF_RX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'ENET0_SOF_TX' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'datatrans_sys_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'datatrans_sys_processing_system7_0_0' has 78 connections declared, but only 63 given [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:169]
+INFO: [Synth 8-6157] synthesizing module 'datatrans_sys_processing_system7_0_axi_periph_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:336]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_KKPF6A' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:651]
+INFO: [Synth 8-6157] synthesizing module 'datatrans_sys_auto_pc_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_auto_pc_0/synth/datatrans_sys_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_axi_protocol_converter' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_aw_channel' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_cmd_translator' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_incr_cmd' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_incr_cmd' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_wrap_cmd' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_wrap_cmd' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_cmd_translator' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_wr_cmd_fsm' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-226] default block is never used [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_wr_cmd_fsm' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_aw_channel' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_b_channel' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_simple_fifo' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_simple_fifo' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_simple_fifo__parameterized0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_simple_fifo__parameterized0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_b_channel' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_ar_channel' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_rd_cmd_fsm' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-226] default block is never used [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_rd_cmd_fsm' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_ar_channel' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_r_channel' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_simple_fifo__parameterized1' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_simple_fifo__parameterized1' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_28_b2s_simple_fifo__parameterized2' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_simple_fifo__parameterized2' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s_r_channel' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axi_register_slice' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized1' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized1' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized2' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized2' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axi_register_slice' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_28_axi_register_slice' is unconnected for instance 'SI_REG' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_28_axi_register_slice' has 93 connections declared, but only 92 given [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axi_register_slice__parameterized0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized3' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized3' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized4' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized4' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized5' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized5' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized6' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized6' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axi_register_slice__parameterized0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_28_axi_register_slice' is unconnected for instance 'MI_REG' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_28_axi_register_slice' has 93 connections declared, but only 92 given [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_b2s' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_28_axi_protocol_converter' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6155] done synthesizing module 'datatrans_sys_auto_pc_0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_auto_pc_0/synth/datatrans_sys_auto_pc_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_KKPF6A' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:651]
+INFO: [Synth 8-6155] done synthesizing module 'datatrans_sys_processing_system7_0_axi_periph_0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:336]
+INFO: [Synth 8-638] synthesizing module 'datatrans_sys_rst_processing_system7_0_100M_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/synth/datatrans_sys_rst_processing_system7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/synth/datatrans_sys_rst_processing_system7_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/opt/coe/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132157]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'datatrans_sys_rst_processing_system7_0_100M_0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/synth/datatrans_sys_rst_processing_system7_0_100M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'datatrans_sys_rst_processing_system7_0_100M_0' is unconnected for instance 'rst_processing_system7_0_100M' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:297]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'datatrans_sys_rst_processing_system7_0_100M_0' is unconnected for instance 'rst_processing_system7_0_100M' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:297]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'datatrans_sys_rst_processing_system7_0_100M_0' is unconnected for instance 'rst_processing_system7_0_100M' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:297]
+WARNING: [Synth 8-7023] instance 'rst_processing_system7_0_100M' of module 'datatrans_sys_rst_processing_system7_0_100M_0' has 10 connections declared, but only 7 given [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:297]
+INFO: [Synth 8-6157] synthesizing module 'datatrans_sys_trans_0_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_trans_0_0/synth/datatrans_sys_trans_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'trans_v1_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'trans_v1_0_S00_AXI' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0_S00_AXI.v:229]
+INFO: [Synth 8-226] default block is never used [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0_S00_AXI.v:370]
+INFO: [Synth 8-6155] done synthesizing module 'trans_v1_0_S00_AXI' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'trans_v1_0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'datatrans_sys_trans_0_0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_trans_0_0/synth/datatrans_sys_trans_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'datatrans_sys' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/synth/datatrans_sys.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'datatrans_sys_wrapper' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/hdl/datatrans_sys_wrapper.v:13]
+WARNING: [Synth 8-7071] port 'DDR_addr' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_ba' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_cas_n' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_ck_n' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_ck_p' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_cke' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_cs_n' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_dm' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_dq' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_dqs_n' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_dqs_p' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_odt' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_ras_n' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_reset_n' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'DDR_we_n' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ddr_vrn' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ddr_vrp' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'FIXED_IO_mio' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ps_clk' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ps_porb' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7071] port 'FIXED_IO_ps_srstb' of module 'datatrans_sys_wrapper' is unconnected for instance 'mw0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+WARNING: [Synth 8-7023] instance 'mw0' of module 'datatrans_sys_wrapper' has 28 connections declared, but only 7 given [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:42]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/.Xil/Vivado-4054894-n01-zeus.olympus.ece.tamu.edu/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/.Xil/Vivado-4054894-n01-zeus.olympus.ece.tamu.edu/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fft_freq' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:3]
+	Parameter width bound to: 8 - type: integer 
+	Parameter decimal bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'butterfly_freq' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/butterfly.v:41]
+	Parameter width bound to: 8 - type: integer 
+	Parameter decimal bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multiply' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/multiply.v:3]
+	Parameter width bound to: 8 - type: integer 
+	Parameter decimal bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'multiply' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/multiply.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'butterfly_freq' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/butterfly.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'fft_freq' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'top_fft_freq' (0#1) [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v:3]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module trans_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module trans_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module trans_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module trans_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module trans_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module trans_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_28_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_28_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_28_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_28_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_28_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_28_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_28_axic_register_slice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_28_axic_register_slice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_28_axi_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_28_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_28_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 3054.000 ; gain = 569.645 ; free physical = 53397 ; free virtual = 1000516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 3054.000 ; gain = 569.645 ; free physical = 53397 ; free virtual = 1000515
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 3054.000 ; gain = 569.645 ; free physical = 53397 ; free virtual = 1000515
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3054.000 ; gain = 0.000 ; free physical = 53392 ; free virtual = 1000510
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'b0'
+Finished Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'b0'
+Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc] for cell 'mw0/datatrans_sys_i/processing_system7_0/inst'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:30]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:31]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:32]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:33]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:34]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:35]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:37]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:38]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:39]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:40]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:41]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:42]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:44]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:45]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:46]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:47]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:48]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:49]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:51]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:52]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:53]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:54]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:55]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:56]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:58]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:59]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:60]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:61]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:62]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:63]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:65]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:66]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:67]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:68]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:69]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:70]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:72]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:73]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:74]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:75]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:76]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:77]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:79]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:80]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:81]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:82]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:83]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:84]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:86]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:87]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:88]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:89]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:90]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:91]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:93]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:94]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:95]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:96]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:97]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:98]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:100]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:101]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:102]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:103]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:104]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:105]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:107]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:108]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:109]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:110]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:111]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:112]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:114]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:115]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:116]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:117]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:118]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:119]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:121]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:122]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:123]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:124]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:125]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:126]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:128]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:129]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:130]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:131]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:132]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:133]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:135]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:136]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:137]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:138]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:139]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:140]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:142]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:143]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:144]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:145]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+INFO: [Common 17-14] Message 'Netlist 29-160' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc:145]
+Finished Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc] for cell 'mw0/datatrans_sys_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/datatrans_sys_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_fft_freq_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_fft_freq_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/datatrans_sys_rst_processing_system7_0_100M_0_board.xdc] for cell 'mw0/datatrans_sys_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/datatrans_sys_rst_processing_system7_0_100M_0_board.xdc] for cell 'mw0/datatrans_sys_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/datatrans_sys_rst_processing_system7_0_100M_0.xdc] for cell 'mw0/datatrans_sys_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/datatrans_sys_rst_processing_system7_0_100M_0.xdc] for cell 'mw0/datatrans_sys_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_fft_freq_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_fft_freq_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3131.906 ; gain = 0.000 ; free physical = 53341 ; free virtual = 1000459
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3131.906 ; gain = 0.000 ; free physical = 53336 ; free virtual = 1000454
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 3131.906 ; gain = 647.551 ; free physical = 53325 ; free virtual = 1000444
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 3131.906 ; gain = 647.551 ; free physical = 53325 ; free virtual = 1000444
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for mw0/datatrans_sys_i/processing_system7_0/inst. (constraint file  /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/dont_touch.xdc, line 23).
+Applied set_property KEEP_HIERARCHY = SOFT for mw0/datatrans_sys_i/rst_processing_system7_0_100M/U0. (constraint file  /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/dont_touch.xdc, line 28).
+Applied set_property KEEP_HIERARCHY = SOFT for mw0/datatrans_sys_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mw0/datatrans_sys_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mw0/datatrans_sys_i/processing_system7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mw0/datatrans_sys_i/processing_system7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mw0/datatrans_sys_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mw0/datatrans_sys_i/trans_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for b0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 3131.906 ; gain = 647.551 ; free physical = 53324 ; free virtual = 1000444
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_28_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_28_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_28_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_28_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3131.906 ; gain = 647.551 ; free physical = 53323 ; free virtual = 1000443
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 4     
+	   2 Input   12 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 39    
+	   3 Input    8 Bit       Adders := 36    
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               66 Bit    Registers := 4     
+	               64 Bit    Registers := 4     
+	               47 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 3     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 9     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 44    
++---Muxes : 
+	   2 Input   66 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 8     
+	   8 Input   64 Bit        Muxes := 2     
+	   2 Input   47 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 11    
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 10    
+	   8 Input   16 Bit        Muxes := 3     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 102   
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 4     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 18    
+	   2 Input    2 Bit        Muxes := 17    
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 66    
+	   8 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+DSP Report: Generating DSP bf3/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf3/mp3/ab is absorbed into DSP bf3/mp3/ab.
+DSP Report: Generating DSP bf3/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf3/mp0/ab is absorbed into DSP bf3/mp0/ab.
+DSP Report: Generating DSP bf1/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf1/mp3/ab is absorbed into DSP bf1/mp3/ab.
+DSP Report: Generating DSP bf1/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf1/mp0/ab is absorbed into DSP bf1/mp0/ab.
+DSP Report: Generating DSP bf2/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf2/mp3/ab is absorbed into DSP bf2/mp3/ab.
+DSP Report: Generating DSP bf2/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf2/mp0/ab is absorbed into DSP bf2/mp0/ab.
+DSP Report: Generating DSP bf0/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf0/mp3/ab is absorbed into DSP bf0/mp3/ab.
+DSP Report: Generating DSP bf0/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf0/mp0/ab is absorbed into DSP bf0/mp0/ab.
+DSP Report: Generating DSP bf5/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf5/mp3/ab is absorbed into DSP bf5/mp3/ab.
+DSP Report: Generating DSP bf5/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf5/mp0/ab is absorbed into DSP bf5/mp0/ab.
+DSP Report: Generating DSP bf4/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf4/mp3/ab is absorbed into DSP bf4/mp3/ab.
+DSP Report: Generating DSP bf4/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf4/mp0/ab is absorbed into DSP bf4/mp0/ab.
+DSP Report: Generating DSP bf3/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf3/mp2/ab is absorbed into DSP bf3/mp2/ab.
+DSP Report: Generating DSP bf3/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf3/mp1/ab is absorbed into DSP bf3/mp1/ab.
+DSP Report: Generating DSP bf1/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf1/mp2/ab is absorbed into DSP bf1/mp2/ab.
+DSP Report: Generating DSP bf1/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf1/mp1/ab is absorbed into DSP bf1/mp1/ab.
+DSP Report: Generating DSP bf7/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf7/mp3/ab is absorbed into DSP bf7/mp3/ab.
+DSP Report: Generating DSP bf7/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf7/mp0/ab is absorbed into DSP bf7/mp0/ab.
+DSP Report: Generating DSP bf2/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf2/mp2/ab is absorbed into DSP bf2/mp2/ab.
+DSP Report: Generating DSP bf2/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf2/mp1/ab is absorbed into DSP bf2/mp1/ab.
+DSP Report: Generating DSP bf0/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf0/mp2/ab is absorbed into DSP bf0/mp2/ab.
+DSP Report: Generating DSP bf0/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf0/mp1/ab is absorbed into DSP bf0/mp1/ab.
+DSP Report: Generating DSP bf6/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf6/mp3/ab is absorbed into DSP bf6/mp3/ab.
+DSP Report: Generating DSP bf6/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf6/mp0/ab is absorbed into DSP bf6/mp0/ab.
+DSP Report: Generating DSP bf8/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf8/mp3/ab is absorbed into DSP bf8/mp3/ab.
+DSP Report: Generating DSP bf8/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf8/mp0/ab is absorbed into DSP bf8/mp0/ab.
+DSP Report: Generating DSP bf10/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf10/mp3/ab is absorbed into DSP bf10/mp3/ab.
+DSP Report: Generating DSP bf10/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf10/mp0/ab is absorbed into DSP bf10/mp0/ab.
+DSP Report: Generating DSP bf5/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf5/mp2/ab is absorbed into DSP bf5/mp2/ab.
+DSP Report: Generating DSP bf5/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf5/mp1/ab is absorbed into DSP bf5/mp1/ab.
+DSP Report: Generating DSP bf4/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf4/mp2/ab is absorbed into DSP bf4/mp2/ab.
+DSP Report: Generating DSP bf4/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf4/mp1/ab is absorbed into DSP bf4/mp1/ab.
+DSP Report: Generating DSP bf9/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf9/mp3/ab is absorbed into DSP bf9/mp3/ab.
+DSP Report: Generating DSP bf9/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf9/mp0/ab is absorbed into DSP bf9/mp0/ab.
+DSP Report: Generating DSP bf7/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf7/mp2/ab is absorbed into DSP bf7/mp2/ab.
+DSP Report: Generating DSP bf7/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf7/mp1/ab is absorbed into DSP bf7/mp1/ab.
+DSP Report: Generating DSP bf6/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf6/mp2/ab is absorbed into DSP bf6/mp2/ab.
+DSP Report: Generating DSP bf6/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf6/mp1/ab is absorbed into DSP bf6/mp1/ab.
+DSP Report: Generating DSP bf11/mp3/ab, operation Mode is: A*B.
+DSP Report: operator bf11/mp3/ab is absorbed into DSP bf11/mp3/ab.
+DSP Report: Generating DSP bf11/mp0/ab, operation Mode is: A*B.
+DSP Report: operator bf11/mp0/ab is absorbed into DSP bf11/mp0/ab.
+DSP Report: Generating DSP bf8/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf8/mp2/ab is absorbed into DSP bf8/mp2/ab.
+DSP Report: Generating DSP bf8/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf8/mp1/ab is absorbed into DSP bf8/mp1/ab.
+DSP Report: Generating DSP bf10/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf10/mp2/ab is absorbed into DSP bf10/mp2/ab.
+DSP Report: Generating DSP bf10/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf10/mp1/ab is absorbed into DSP bf10/mp1/ab.
+DSP Report: Generating DSP bf9/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf9/mp2/ab is absorbed into DSP bf9/mp2/ab.
+DSP Report: Generating DSP bf9/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf9/mp1/ab is absorbed into DSP bf9/mp1/ab.
+DSP Report: Generating DSP bf11/mp2/ab, operation Mode is: A*B.
+DSP Report: operator bf11/mp2/ab is absorbed into DSP bf11/mp2/ab.
+DSP Report: Generating DSP bf11/mp1/ab, operation Mode is: A*B.
+DSP Report: operator bf11/mp1/ab is absorbed into DSP bf11/mp1/ab.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 3131.906 ; gain = 647.551 ; free physical = 53314 ; free virtual = 1000440
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 3150.898 ; gain = 666.543 ; free physical = 53267 ; free virtual = 1000393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 3226.953 ; gain = 742.598 ; free physical = 53180 ; free virtual = 1000306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 3234.961 ; gain = 750.605 ; free physical = 53164 ; free virtual = 1000290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 3234.961 ; gain = 750.605 ; free physical = 53158 ; free virtual = 1000284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 3234.961 ; gain = 750.605 ; free physical = 53158 ; free virtual = 1000284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 3234.961 ; gain = 750.605 ; free physical = 53158 ; free virtual = 1000284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 3234.961 ; gain = 750.605 ; free physical = 53158 ; free virtual = 1000284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 3234.961 ; gain = 750.605 ; free physical = 53158 ; free virtual = 1000284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 3234.961 ; gain = 750.605 ; free physical = 53158 ; free virtual = 1000284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | memory_reg[3]  | 20     | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | memory_reg[31] | 34     | 34         | 0      | 34      | 0      | 0      | 0      | 
+|dsrl__3     | memory_reg[31] | 13     | 13         | 0      | 13      | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 4      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 4      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 5      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiply    | A*B         | 12     | 0      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |BIBUF       |   130|
+|3     |BUFG        |     1|
+|4     |CARRY4      |   162|
+|5     |DSP48E1     |    48|
+|6     |LUT1        |    37|
+|7     |LUT2        |   624|
+|8     |LUT3        |   230|
+|9     |LUT4        |    72|
+|10    |LUT5        |   143|
+|11    |LUT6        |   259|
+|12    |MUXF7       |    16|
+|13    |PS7         |     1|
+|14    |SRL16       |     1|
+|15    |SRL16E      |    22|
+|16    |SRLC32E     |    47|
+|17    |FDCE        |   128|
+|18    |FDR         |     8|
+|19    |FDRE        |   766|
+|20    |FDSE        |    19|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 3234.961 ; gain = 750.605 ; free physical = 53158 ; free virtual = 1000284
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 131 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 3234.961 ; gain = 672.699 ; free physical = 53158 ; free virtual = 1000284
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 3234.969 ; gain = 750.605 ; free physical = 53443 ; free virtual = 1000569
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3234.969 ; gain = 0.000 ; free physical = 53444 ; free virtual = 1000570
+INFO: [Netlist 29-17] Analyzing 235 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3266.977 ; gain = 0.000 ; free physical = 53444 ; free virtual = 1000570
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  FDR => FDRE: 8 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: b4afced2
+INFO: [Common 17-83] Releasing license: Synthesis
+155 Infos, 171 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 3266.977 ; gain = 1130.152 ; free physical = 53443 ; free virtual = 1000569
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2754.037; main = 2425.761; forked = 345.061
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4228.762; main = 3266.980; forked = 993.797
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/top_fft_freq.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_fft_freq_utilization_synth.rpt -pb top_fft_freq_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  8 17:01:31 2025...

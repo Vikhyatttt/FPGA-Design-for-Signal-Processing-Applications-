@@ -1,0 +1,22 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L blk_mem_gen_v8_4_6 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_freq_tb_behav xil_defaultlib.fft_freq_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:43]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:44]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:45]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:46]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:51]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:52]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:57]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:58]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:59]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v:60]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

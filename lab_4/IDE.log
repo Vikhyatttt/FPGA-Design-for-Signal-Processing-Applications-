@@ -1,0 +1,106 @@
+16:49:52 DEBUG : Logs will be stored at '/home/grads/t/tamu_vik/ECEN-722/lab4/IDE.log'.
+16:50:04 INFO  : Registering command handlers for Vitis TCF services
+16:50:04 INFO  : Launching XSCT server: xsct -n  -interactive /home/grads/t/tamu_vik/ECEN-722/lab4/temp_xsdb_launch_script.tcl
+16:50:06 INFO  : Platform repository initialization has completed.
+16:50:06 INFO  : XSCT server has started successfully.
+16:50:07 INFO  : Successfully done setting XSCT server connection channel  
+16:50:07 INFO  : plnx-install-location is set to ''
+16:50:08 INFO  : Successfully done query RDI_DATADIR 
+16:50:08 INFO  : Successfully done setting workspace for the tool. 
+16:53:13 INFO  : Result from executing command 'getProjects': top_fft_time
+16:53:13 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:53:16 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:53:25 INFO  : Platform 'top_fft_time' is added to custom repositories.
+16:53:50 INFO  : Platform 'top_fft_time' is added to custom repositories.
+16:54:39 INFO  : Generated template bif file for fsbl_system
+16:59:33 INFO  : Result from executing command 'getProjects': top_fft_time
+16:59:33 INFO  : Result from executing command 'getPlatforms': top_fft_time|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time/export/top_fft_time/top_fft_time.xpfm;xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:59:42 INFO  : Checking for BSP changes to sync application flags for project 'fsbl'...
+17:07:40 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/grads/t/tamu_vik/ECEN-722/lab4/BOOT.bin
+17:07:40 INFO  : Creating new bif file /home/grads/t/tamu_vik/ECEN-722/lab4/output.bif
+17:07:42 INFO  : Bootgen command execution is done.
+17:29:14 INFO  : Checking for BSP changes to sync application flags for project 'fsbl'...
+17:34:02 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/grads/t/tamu_vik/ECEN-722/lab4/BOOT.bin
+17:34:02 INFO  : Overwriting existing bif file /home/grads/t/tamu_vik/ECEN-722/lab4/output.bif
+17:34:04 INFO  : Bootgen command execution is done.
+18:05:07 ERROR : (XSDB Server)Hangup
+
+16:25:47 DEBUG : Logs will be stored at '/home/grads/t/tamu_vik/ECEN-722/lab4/IDE.log'.
+16:25:48 INFO  : Launching XSCT server: xsct -n  -interactive /home/grads/t/tamu_vik/ECEN-722/lab4/temp_xsdb_launch_script.tcl
+16:25:51 INFO  : XSCT server has started successfully.
+16:25:51 INFO  : Successfully done setting XSCT server connection channel  
+16:25:51 INFO  : plnx-install-location is set to ''
+16:25:51 INFO  : Successfully done setting workspace for the tool. 
+16:25:57 INFO  : Platform repository initialization has completed.
+16:26:09 INFO  : Successfully done query RDI_DATADIR 
+16:26:10 INFO  : Registering command handlers for Vitis TCF services
+16:39:59 INFO  : Result from executing command 'getProjects': top_fft_time_new
+16:39:59 INFO  : Result from executing command 'getPlatforms': top_fft_time|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time/export/top_fft_time/top_fft_time.xpfm;xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:40:01 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:40:06 INFO  : Platform 'top_fft_time_new' is added to custom repositories.
+16:40:09 ERROR : 
+org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at org.eclipse.cdt.internal.core.settings.model.ExceptionFactory.createCoreException(ExceptionFactory.java:26) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at org.eclipse.cdt.core.CCorePlugin.mapCProjectOwner(CCorePlugin.java:890) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at org.eclipse.cdt.core.CCorePlugin$1.run(CCorePlugin.java:945) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.cdt.core.CCorePlugin.createCProject(CCorePlugin.java:930) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createCProject(AppCreationHandler.java:92) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:67) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+Caused by: org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at org.eclipse.cdt.internal.core.CConfigBasedDescriptorManager.configure(CConfigBasedDescriptorManager.java:160) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at org.eclipse.cdt.core.CCorePlugin.mapCProjectOwner(CCorePlugin.java:885) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	... 20 more
+16:40:22 ERROR : Failed to create application project
+org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:150) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+16:44:42 INFO  : Result from executing command 'getProjects': top_fft_time_new
+16:44:42 INFO  : Result from executing command 'getPlatforms': top_fft_time|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time/export/top_fft_time/top_fft_time.xpfm;xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:44:49 INFO  : Platform 'top_fft_time_new' is added to custom repositories.
+16:45:14 INFO  : Platform 'top_fft_time_new' is added to custom repositories.
+16:46:46 INFO  : Result from executing command 'getProjects': top_fft_time_new
+16:46:46 INFO  : Result from executing command 'getPlatforms': top_fft_time_new|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time_new/export/top_fft_time_new/top_fft_time_new.xpfm;top_fft_time|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time/export/top_fft_time/top_fft_time.xpfm;xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:46:55 INFO  : Checking for BSP changes to sync application flags for project 'fft_time_new'...
+16:51:28 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/BOOT.bin
+16:51:28 INFO  : Creating new bif file /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/output.bif
+16:51:30 INFO  : Bootgen command execution is done.
+17:05:57 INFO  : Result from executing command 'getProjects': top_fft_freq;top_fft_time_new
+17:05:57 INFO  : Result from executing command 'getPlatforms': top_fft_time_new|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time_new/export/top_fft_time_new/top_fft_time_new.xpfm;top_fft_time|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time/export/top_fft_time/top_fft_time.xpfm;xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:06:06 INFO  : Platform 'top_fft_freq' is added to custom repositories.
+17:06:27 INFO  : Platform 'top_fft_freq' is added to custom repositories.
+17:07:49 INFO  : Result from executing command 'getProjects': top_fft_freq;top_fft_time_new
+17:07:49 INFO  : Result from executing command 'getPlatforms': top_fft_freq|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_freq/export/top_fft_freq/top_fft_freq.xpfm;top_fft_time_new|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time_new/export/top_fft_time_new/top_fft_time_new.xpfm;top_fft_time|/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time/export/top_fft_time/top_fft_time.xpfm;xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+17:07:57 INFO  : Checking for BSP changes to sync application flags for project 'fft_freq'...
+17:13:55 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/fft_freq/BOOT.bin
+17:13:55 INFO  : Creating new bif file /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/fft_freq/output.bif
+17:13:56 INFO  : Bootgen command execution is done.

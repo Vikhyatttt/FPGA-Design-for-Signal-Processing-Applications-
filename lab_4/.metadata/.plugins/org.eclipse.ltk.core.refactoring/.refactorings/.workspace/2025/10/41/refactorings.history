@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;top_fft_time&apos;" deleteContents="false" description="Delete resource &apos;top_fft_time&apos;" element1="/top_fft_time" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1759958813219"/>&#x0A;<refactoring comment="Delete resource &apos;fsbl_system&apos;" deleteContents="false" description="Delete resource &apos;fsbl_system&apos;" element1="/fsbl_system" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1759958825855"/>
+</session>

@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Oct  1 18:18:46 2025
+# Process ID: 1006906
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base
+# Command line: vivado
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/vivado.log
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/vivado.jou
+# Running On: n01-zeus.olympus.ece.tamu.edu, OS: Linux, CPU Frequency: 3193.877 MHz, CPU Physical cores: 1, Host memory: 1081925 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.xpr
+add_files -norecurse {/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/butterfly.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/multiply.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time_tb.v}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top fft_time_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top datatrans_sys_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top fft_time_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source fft_time_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {50ns} -objects [get_filesets sim_1]
+relaunch_sim
+close_sim
+launch_simulation
+source fft_time_tb.tcl
+close_sim

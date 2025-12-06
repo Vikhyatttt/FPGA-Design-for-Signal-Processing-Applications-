@@ -1,0 +1,7 @@
+Running: xsim.dir/IIR_fold_tb_behav/xsimk -simmode gui -wdb IIR_fold_tb_behav.wdb -simrunnum 0 -socket 33871
+Design successfully loaded
+Design Loading Memory Usage: 34112 KB (Peak: 34232 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 116108 KB (Peak: 173380 KB)
+Simulation CPU Usage: 30 ms

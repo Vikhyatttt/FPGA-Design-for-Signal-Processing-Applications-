@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+3D SA PASS: mor=40285038
+c11=3.500000  c12=5.000000  c21=2.500000  c22=4.000000
+$finish called at time : 17 ns : File "/home/grads/t/tamu_vik/ECEN-722/lab8/lab8_student_code/systolicarray_tb.v" Line 49

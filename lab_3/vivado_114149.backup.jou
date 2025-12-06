@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Sep 30 16:07:10 2025
+# Process ID: 114149
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab_3
+# Command line: vivado
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab_3/vivado.log
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab_3/vivado.jou
+# Running On: n01-zeus.olympus.ece.tamu.edu, OS: Linux, CPU Frequency: 3193.877 MHz, CPU Physical cores: 1, Host memory: 1081925 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/grads/t/tamu_vik/ECEN-722/lab_3/lab3_base/base/base.xpr
+add_files -norecurse {/home/grads/t/tamu_vik/ECEN-722/lab_3/lab3_base/lab3_codes/top_IIR_fold.v /home/grads/t/tamu_vik/ECEN-722/lab_3/lab3_base/lab3_codes/IIR_fold.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/grads/t/tamu_vik/ECEN-722/lab_3/lab3_base/lab3_codes/IIR_fold_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_IIR_fold [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IIR_fold_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source IIR_fold_tb.tcl
+close_sim

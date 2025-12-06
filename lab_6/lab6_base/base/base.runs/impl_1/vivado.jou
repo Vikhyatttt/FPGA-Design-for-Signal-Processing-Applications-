@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Oct 30 18:26:45 2025
+# Process ID: 1028525
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.runs/impl_1
+# Command line: vivado -log top_viterbi.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_viterbi.tcl -notrace
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.runs/impl_1/top_viterbi.vdi
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.runs/impl_1/vivado.jou
+# Running On: zach-127-06.engr.tamu.edu, OS: Linux, CPU Frequency: 2400.000 MHz, CPU Physical cores: 6, Host memory: 16620 MB
+#-----------------------------------------------------------
+source top_viterbi.tcl -notrace

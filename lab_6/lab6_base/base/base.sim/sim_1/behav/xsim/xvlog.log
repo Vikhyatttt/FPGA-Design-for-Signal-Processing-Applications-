@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/sim/datatrans_sys_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_auto_pc_0/sim/datatrans_sys_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.ip_user_files/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.ip_user_files/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_trans_0_0/sim/datatrans_sys_trans_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys_trans_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.ip_user_files/bd/datatrans_sys/sim/datatrans_sys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys
+INFO: [VRFC 10-311] analyzing module datatrans_sys_processing_system7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_KKPF6A
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.gen/sources_1/bd/datatrans_sys/hdl/datatrans_sys_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/bmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/hammingdis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hammingdis
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/top_viterbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_viterbi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/viterbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module viterbi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/comp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/pmu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pmu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/pmu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pmu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/viterbi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module viterbi_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_student_code/bmu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bmu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab6/lab6_base/base/base.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

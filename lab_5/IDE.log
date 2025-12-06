@@ -1,0 +1,22 @@
+16:11:07 DEBUG : Logs will be stored at '/home/grads/t/tamu_vik/ECEN-722/lab5/IDE.log'.
+16:11:12 INFO  : Launching XSCT server: xsct -n  -interactive /home/grads/t/tamu_vik/ECEN-722/lab5/temp_xsdb_launch_script.tcl
+16:11:12 INFO  : Registering command handlers for Vitis TCF services
+16:11:13 INFO  : Platform repository initialization has completed.
+16:11:14 INFO  : XSCT server has started successfully.
+16:11:14 INFO  : Successfully done setting XSCT server connection channel  
+16:11:14 INFO  : plnx-install-location is set to ''
+16:11:14 INFO  : Successfully done query RDI_DATADIR 
+16:11:14 INFO  : Successfully done setting workspace for the tool. 
+16:13:53 INFO  : Result from executing command 'getProjects': top_decoder
+16:13:53 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:13:55 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:14:00 INFO  : Platform 'top_decoder' is added to custom repositories.
+16:14:21 INFO  : Platform 'top_decoder' is added to custom repositories.
+16:15:51 INFO  : Result from executing command 'getProjects': top_decoder
+16:15:51 INFO  : Result from executing command 'getPlatforms': top_decoder|/home/grads/t/tamu_vik/ECEN-722/lab5/top_decoder/export/top_decoder/top_decoder.xpfm;xilinx_vck190_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm;xilinx_vck190_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_dfx_202310_1/xilinx_vck190_base_dfx_202310_1.xpfm;xilinx_vek280_es1_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vek280_es1_base_202310_1/xilinx_vek280_es1_base_202310_1.xpfm;xilinx_vmk180_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_vmk180_base_202310_1/xilinx_vmk180_base_202310_1.xpfm;xilinx_zcu102_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_202310_1/xilinx_zcu102_base_202310_1.xpfm;xilinx_zcu102_base_dfx_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu102_base_dfx_202310_1/xilinx_zcu102_base_dfx_202310_1.xpfm;xilinx_zcu104_base_202310_1|/opt/coe/Xilinx/Vitis/2023.1/base_platforms/xilinx_zcu104_base_202310_1/xilinx_zcu104_base_202310_1.xpfm
+16:15:59 INFO  : Checking for BSP changes to sync application flags for project 'lab5'...
+16:19:42 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/grads/t/tamu_vik/ECEN-722/lab5/BOOT.bin
+16:19:42 INFO  : Creating new bif file /home/grads/t/tamu_vik/ECEN-722/lab5/output.bif
+16:19:44 INFO  : Bootgen command execution is done.
+16:57:49 ERROR : (XSDB Server)Hangup
+

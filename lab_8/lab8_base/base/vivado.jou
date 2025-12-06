@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Nov  7 15:55:06 2025
+# Process ID: 2936586
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_base/base
+# Command line: vivado
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_base/base/vivado.log
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_base/base/vivado.jou
+# Running On: n01-zeus.olympus.ece.tamu.edu, OS: Linux, CPU Frequency: 3193.877 MHz, CPU Physical cores: 1, Host memory: 1081925 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_base/base/base.xpr
+add_files -norecurse {/home/grads/t/tamu_vik/ECEN-722/lab8/lab8_student_code/systolicarray_2.v /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_student_code/systolicarray_1.v /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_student_code/top_systolicarray.v /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_student_code/multiply.v /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_student_code/systolicarray_1_unit.v /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_student_code/systolicarray_2_unit.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/grads/t/tamu_vik/ECEN-722/lab8/lab8_student_code/systolicarray_tb.v
+launch_simulation

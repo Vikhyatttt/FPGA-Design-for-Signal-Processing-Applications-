@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Oct  1 18:18:46 2025
+# Process ID: 1006906
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base
+# Command line: vivado
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/vivado.log
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/vivado.jou
+# Running On: n01-zeus.olympus.ece.tamu.edu, OS: Linux, CPU Frequency: 3193.877 MHz, CPU Physical cores: 1, Host memory: 1081925 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Prianka/Documents/base_vivado_new/base_vivado/base' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/ip_repo/trans_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/coe/Xilinx/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 8342.055 ; gain = 133.887 ; free physical = 31368 ; free virtual = 1002583
+add_files -norecurse {/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/butterfly.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/multiply.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time_tb.v}
+set_property top fft_time_tb [current_fileset]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fft_freq_pipe_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/coe/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/coe/Xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_freq_pipe_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L xilinx_vip -prj fft_freq_pipe_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_processing_system7_0_0/sim/datatrans_sys_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_auto_pc_0/sim/datatrans_sys_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/bd/datatrans_sys/ipshared/2ea6/hdl/trans_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_trans_0_0/sim/datatrans_sys_trans_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys_trans_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/bd/datatrans_sys/sim/datatrans_sys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys
+INFO: [VRFC 10-311] analyzing module datatrans_sys_processing_system7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_KKPF6A
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/hdl/datatrans_sys_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datatrans_sys_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/butterfly.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_time
+INFO: [VRFC 10-311] analyzing module butterfly_freq
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiply
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_time
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_time_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj fft_freq_pipe_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/sim/datatrans_sys_rst_processing_system7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'datatrans_sys_rst_processing_system7_0_100M_0'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_freq_pipe_tb_behav xil_defaultlib.fft_freq_pipe_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_freq_pipe_tb_behav xil_defaultlib.fft_freq_pipe_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.fft_freq_pipe_tb in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8562.988 ; gain = 0.000 ; free physical = 32097 ; free virtual = 1003320
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top datatrans_sys_wrapper [current_fileset]
+set_property top fft_time_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fft_time_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/coe/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/coe/Xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_time_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L xilinx_vip -prj fft_time_tb_vlog.prj
+xvhdl --incr --relax -prj fft_time_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_time_tb_behav xil_defaultlib.fft_time_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_time_tb_behav xil_defaultlib.fft_time_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:42]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:43]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:44]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:47]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:48]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:49]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:54]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:55]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.multiply
+Compiling module xil_defaultlib.butterfly_time
+Compiling module xil_defaultlib.fft_time
+Compiling module xil_defaultlib.fft_time_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fft_time_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_time_tb_behav -key {Behavioral:sim_1:Functional:fft_time_tb} -tclbatch {fft_time_tb.tcl} -protoinst "protoinst_files/datatrans_sys.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/datatrans_sys.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/datatrans_sys.protoinst for the following reason(s):
+There are no instances of module "datatrans_sys" in the design.
+
+Time resolution is 1 ps
+source fft_time_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_time_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 8635.953 ; gain = 0.000 ; free physical = 31843 ; free virtual = 1003067
+set_property -name {xsim.simulate.runtime} -value {50ns} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.gen/sources_1/bd/datatrans_sys/hdl/datatrans_sys_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time_tb.v:]
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'fft_time_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/coe/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/coe/Xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_time_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L xilinx_vip -prj fft_time_tb_vlog.prj
+xvhdl --incr --relax -prj fft_time_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'fft_time_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_time_tb_behav xil_defaultlib.fft_time_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_time_tb_behav xil_defaultlib.fft_time_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:42]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:43]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:44]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:47]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:48]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:49]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:54]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:55]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:56]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/datatrans_sys.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/datatrans_sys.protoinst for the following reason(s):
+There are no instances of module "datatrans_sys" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 8639.848 ; gain = 3.895 ; free physical = 33631 ; free virtual = 1004537
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fft_time_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/coe/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/coe/Xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_time_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L xilinx_vip -prj fft_time_tb_vlog.prj
+xvhdl --incr --relax -prj fft_time_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_time_tb_behav xil_defaultlib.fft_time_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_time_tb_behav xil_defaultlib.fft_time_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:42]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:43]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:44]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:47]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:48]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:49]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:54]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:55]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:56]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_time_tb_behav -key {Behavioral:sim_1:Functional:fft_time_tb} -tclbatch {fft_time_tb.tcl} -protoinst "protoinst_files/datatrans_sys.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/datatrans_sys.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/datatrans_sys.protoinst for the following reason(s):
+There are no instances of module "datatrans_sys" in the design.
+
+Time resolution is 1 ps
+source fft_time_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_time_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 8641.848 ; gain = 2.000 ; free physical = 32585 ; free virtual = 1003491
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  1 19:04:41 2025...

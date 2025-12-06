@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct 31 17:28:01 2025
+# Process ID: 573346
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab7/lab7_base/base/base.runs/synth_1
+# Command line: vivado -log top_kalman.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_kalman.tcl
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab7/lab7_base/base/base.runs/synth_1/top_kalman.vds
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab7/lab7_base/base/base.runs/synth_1/vivado.jou
+# Running On: zach-127-04.engr.tamu.edu, OS: Linux, CPU Frequency: 2400.000 MHz, CPU Physical cores: 6, Host memory: 16620 MB
+#-----------------------------------------------------------
+source top_kalman.tcl -notrace

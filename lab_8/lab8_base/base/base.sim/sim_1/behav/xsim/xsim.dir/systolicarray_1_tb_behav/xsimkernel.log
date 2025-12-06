@@ -1,0 +1,7 @@
+Running: xsim.dir/systolicarray_1_tb_behav/xsimk -simmode gui -wdb systolicarray_1_tb_behav.wdb -simrunnum 0 -socket 33801
+Design successfully loaded
+Design Loading Memory Usage: 34136 KB (Peak: 34256 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 120232 KB (Peak: 173404 KB)
+Simulation CPU Usage: 40 ms

@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/datatrans_sys/ip/datatrans_sys_rst_processing_system7_0_100M_0/sim/datatrans_sys_rst_processing_system7_0_100M_0.vhd" \
+
+# Do not sort compile order
+nosort

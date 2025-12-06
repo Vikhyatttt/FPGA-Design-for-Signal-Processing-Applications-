@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/grads/t/tamu_vik/ECEN-722/lab4/fft_freq/Debug/fft_freq.elf
+	/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/sdcard/u-boot.elf
+	/home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_freq/hw/top_fft_freq.bit
+}

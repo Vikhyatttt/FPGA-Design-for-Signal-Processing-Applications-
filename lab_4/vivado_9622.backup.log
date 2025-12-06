@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct  3 16:00:09 2025
+# Process ID: 9622
+# Current directory: /home/grads/t/tamu_vik/ECEN-722/lab4
+# Command line: vivado
+# Log file: /home/grads/t/tamu_vik/ECEN-722/lab4/vivado.log
+# Journal file: /home/grads/t/tamu_vik/ECEN-722/lab4/vivado.jou
+# Running On: zach-127-15.engr.tamu.edu, OS: Linux, CPU Frequency: 2400.000 MHz, CPU Physical cores: 6, Host memory: 16620 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/ip_repo/trans_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/coe/Xilinx/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 8984.109 ; gain = 439.473 ; free physical = 4109 ; free virtual = 18136
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/coe/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+add_files -norecurse {/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_time.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq_pipe.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq_pipe.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v}
+add_files -norecurse /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/multiply.v
+WARNING: [filemgmt 56-12] File '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/multiply.v' cannot be added to the project because it already exists in the project, skipping this file
+launch_runs synth_1
+[Fri Oct  3 16:20:54 2025] Launched synth_1...
+Run output will be captured here: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fft_time_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/opt/coe/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/coe/Xilinx/Vivado/2023.1/data/xsim/xsim.ini' copied to run dir:'/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fft_time_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L xilinx_vip -prj fft_time_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_time.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_fft_time
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_fft_freq_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_freq_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_freq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_freq
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/top_fft_freq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_fft_freq
+xvhdl --incr --relax -prj fft_time_tb_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_time_tb_behav xil_defaultlib.fft_time_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/coe/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_14 -L processing_system7_vip_v1_0_16 -L generic_baseblocks_v2_1_0 -L fifo_generator_v13_2_8 -L axi_data_fifo_v2_1_27 -L axi_register_slice_v2_1_28 -L axi_protocol_converter_v2_1_28 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fft_time_tb_behav xil_defaultlib.fft_time_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:42]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:43]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:44]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:47]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:48]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:49]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:54]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:55]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'Wr' [/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_student_code/fft_time.v:56]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fft_time_tb_behav -key {Behavioral:sim_1:Functional:fft_time_tb} -tclbatch {fft_time_tb.tcl} -protoinst "protoinst_files/datatrans_sys.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/datatrans_sys.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/datatrans_sys.protoinst for the following reason(s):
+There are no instances of module "datatrans_sys" in the design.
+
+Time resolution is 1 ps
+source fft_time_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fft_time_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 9254.984 ; gain = 94.258 ; free physical = 1975 ; free virtual = 16290
+set_property top top_fft_time [current_fileset]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Oct  3 16:34:35 2025] Launched synth_1...
+Run output will be captured here: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/runme.log
+[Fri Oct  3 16:34:35 2025] Launched impl_1...
+Run output will be captured here: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4684] Expected long value for param Write_Depth_A but, float/scientific notation value 65536. is provided. The value is converted to long type(65536)
+WARNING: [IP_Flow 19-4684] Expected long value for param Write_Depth_A but, float/scientific notation value 65536. is provided. The value is converted to long type(65536)
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0
+set_property -dict [list \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Enable_B {Always_Enabled} \
+  CONFIG.Memory_Type {True_Dual_Port_RAM} \
+  CONFIG.Operating_Mode_A {READ_FIRST} \
+  CONFIG.Operating_Mode_B {READ_FIRST} \
+  CONFIG.Write_Depth_A {65536} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+generate_target all [get_files  /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+export_ip_user_files -of_objects [get_files /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs blk_mem_gen_0_synth_1
+[Fri Oct  3 16:40:57 2025] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/sim_scripts -ip_user_files_dir /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files -ipstatic_source_dir /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/modelsim} {questa=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/questa} {xcelium=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/xcelium} {vcs=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/vcs} {riviera=/home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1
+
+launch_runs impl_1
+[Fri Oct  3 16:42:41 2025] Launched synth_1...
+Run output will be captured here: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/synth_1/runme.log
+[Fri Oct  3 16:42:41 2025] Launched impl_1...
+Run output will be captured here: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Fri Oct  3 16:45:50 2025] Launched impl_1...
+Run output will be captured here: /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file /home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: /home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: /home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (/opt/coe/Xilinx/Vivado/2023.1/data/embeddedsw) loading 0 seconds
+write_hw_platform: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 9536.918 ; gain = 0.000 ; free physical = 2858 ; free virtual = 16885
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+file copy -force /home/grads/t/tamu_vik/ECEN-722/lab4/lab4_base/base/base.runs/impl_1/top_fft_time.bit /home/grads/t/tamu_vik/ECEN-722/lab4/top_fft_time/tft.bit

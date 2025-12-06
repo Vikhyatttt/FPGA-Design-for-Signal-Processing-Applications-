@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/grads/t/tamu_vik/ECEN749/lab3/fsbl/Debug/fsbl.elf
+	/home/grads/t/tamu_vik/ECEN749/lab3/zybo20/hw/top_IIR_unfold.bit
+	/home/grads/t/tamu_vik/ECEN-722/lab_3/lab3_base/sdcard/u-boot.elf
+}

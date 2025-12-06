@@ -30,6 +30,6 @@ Each folder includes pre-lab or post_lab or both thr files containing implementa
 ---
 
 **Author:** Sai Vikhyat Pattar  
-**Course:** ECEN 726 – FPGA Development for Signal Processing Systems  
+**Course:** ECEN 722 – FPGA Information Processing Systems  
 **Institution:** Texas A&M University  
 Contact: saivikhyat24@gmail.com 
